@@ -83,3 +83,15 @@ pnpm add lint-staged -D
     ]
   }
 }
+
+# 10、安装commitlint
+```shell
+pnpm add @commitlint/{cli,config-conventional} -D
+```
+
+# 11、配置commitlint.config.js
+```js
+export default {
+  extends: ['@commitlint/config-conventional'],
+};
+```
