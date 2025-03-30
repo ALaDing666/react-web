@@ -59,3 +59,27 @@ export default {
 ```
 
 # 5、重新打开项目
+
+# 6、安装husky
+```shell
+pnpm add husky -D
+```
+
+# 7、初始化husky
+```shell
+pnpm husky init
+```
+# 8、安装lint-staged
+```shell
+pnpm add lint-staged -D
+```
+
+# 9、配置lint-staged
+```json
+{
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run eslint:fix",
+    ]
+  }
+}
