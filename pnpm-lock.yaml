@@ -16,9 +16,11 @@ specifiers:
   eslint-plugin-react-hooks: ^5.2.0
   husky: ^9.1.7
   lint-staged: ^15.5.0
+  modern-normalize: ^3.0.1
   prettier: ^3.5.3
   react: ^19.1.0
   react-dom: ^19.1.0
+  react-router: ^7.4.1
   react-scripts: 5.0.1
   typescript: ^4.9.5
   web-vitals: ^2.1.4
@@ -32,8 +34,10 @@ dependencies:
   '@types/node': 16.18.126
   '@types/react': 19.0.12
   '@types/react-dom': 19.0.4_@types+react@19.0.12
+  modern-normalize: 3.0.1
   react: 19.1.0
   react-dom: 19.1.0_react@19.1.0
+  react-router: 7.4.1_j6k6oay3ugsr56slyfvma2drry
   react-scripts: 5.0.1_ttjws7pqvitjvonjzvuqxuflxm
   typescript: 4.9.5
   web-vitals: 2.1.4
@@ -2622,6 +2626,10 @@ packages:
       '@types/node': 16.18.126
     dev: true
 
+  /@types/cookie/0.6.0:
+    resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
+    dev: false
+
   /@types/eslint-scope/3.7.7:
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
     dependencies:
@@ -4142,6 +4150,11 @@ packages:
   /cookie/0.7.1:
     resolution: {integrity: sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==}
     engines: {node: '>= 0.6'}
+    dev: false
+
+  /cookie/1.0.2:
+    resolution: {integrity: sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA==}
+    engines: {node: '>=18'}
     dev: false
 
   /core-js-compat/3.41.0:
@@ -7853,6 +7866,11 @@ packages:
       minimist: 1.2.8
     dev: false
 
+  /modern-normalize/3.0.1:
+    resolution: {integrity: sha512-VqlMdYi59Uch6fnUPxnpijWUQe+TW6zeWCvyr6Mb7JibheHzSuAAoJi2c71ZwIaWKpECpGpYHoaaBp6rBRr+/g==}
+    engines: {node: '>=6'}
+    dev: false
+
   /ms/2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
     dev: false
@@ -9361,6 +9379,24 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /react-router/7.4.1_j6k6oay3ugsr56slyfvma2drry:
+    resolution: {integrity: sha512-Vmizn9ZNzxfh3cumddqv3kLOKvc7AskUT0dC1prTabhiEi0U4A33LmkDOJ79tXaeSqCqMBXBU/ySX88W85+EUg==}
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+    dependencies:
+      '@types/cookie': 0.6.0
+      cookie: 1.0.2
+      react: 19.1.0
+      react-dom: 19.1.0_react@19.1.0
+      set-cookie-parser: 2.7.1
+      turbo-stream: 2.4.0
+    dev: false
+
   /react-scripts/5.0.1_ttjws7pqvitjvonjzvuqxuflxm:
     resolution: {integrity: sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==}
     engines: {node: '>=14.0.0'}
@@ -9932,6 +9968,10 @@ packages:
       send: 0.19.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /set-cookie-parser/2.7.1:
+    resolution: {integrity: sha512-IOc8uWeOZgnb3ptbCURJWNjWUPcO3ZnTTdzsurqERrP6nPyv+paC55vJM0LpOlT2ne+Ix+9+CRG1MNLlyZ4GjQ==}
     dev: false
 
   /set-function-length/1.2.2:
@@ -10714,6 +10754,10 @@ packages:
     dependencies:
       tslib: 1.14.1
       typescript: 4.9.5
+    dev: false
+
+  /turbo-stream/2.4.0:
+    resolution: {integrity: sha512-FHncC10WpBd2eOmGwpmQsWLDoK4cqsA/UT/GqNoaKOQnT8uzhtCbg3EoUDMvqpOSAI0S26mr0rkjzbOO6S3v1g==}
     dev: false
 
   /type-check/0.3.2:
