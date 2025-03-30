@@ -1,10 +1,3 @@
-# 1、安装eslint相关依赖
-```shell
-pnpm add eslint typescript-eslint @eslint/js globals eslint-plugin-react-hooks eslint-plugin-react-refresh eslint-plugin-prettier eslint-config-prettier prettier -D
-```
-
-# 2、配置eslint.config.js
-```js
 import tseslint from 'typescript-eslint';
 import js from '@eslint/js';
 import globals from 'globals';
@@ -31,31 +24,3 @@ export default tseslint.config(
     },
   },
 );
-```
-
-# 3、配置prettier.config.js
-```js
-export default {
-  semi: true,
-  singleQuote: true,
-  trailingComma: 'all',
-  arrowParens: 'always',
-  jsxSingleQuote: true,
-  printWidth: 120,
-  tabWidth: 2,
-  useTabs: false,
-  endOfLine: 'lf',
-};
-```
-
-# 4、配置package.json
-```json
-{
-  "scripts": {
-    "fomrat": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
-  }
-}
-```
-
-# 5、重新打开项目
