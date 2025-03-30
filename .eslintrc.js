@@ -26,6 +26,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
+  ignorePatterns: ['node_modules', 'dist', 'craco.config.js'],
   rules: {
     'prettier/prettier': 'error',
   },
