@@ -1,0 +1,3 @@
+onlyBuildDependencies:
+  - core-js
+  - core-js-pure
