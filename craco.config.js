@@ -33,6 +33,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/api': {
+        changeOrigin: true,
         target: 'https://httpbin.org',
         pathRewrite: {
           '^/api': ''
